@@ -1,0 +1,47 @@
+.action-link:hover {
+  filter: brightness(1.12);
+}
+
+.action-link:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.line-link {
+  background: #06c755;
+}
+
+.contact-link {
+  background: #7951d4;
+  border-color: #bda0ff55;
+}
+
+.contact-note {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.overlay-card .action-link {
+  font-size: 14px;
+}
+
+.overlay-card > button {
+  min-height: 44px;
+}
+
+.victory-actions {
+  padding-top: 14px;
+  border-top: 1px solid #ffffff22;
+}
+
+@media (max-width: 700px), (pointer: coarse) {
+  .developer-card .developer-actions,
+  .overlay-card .victory-actions {
+    flex-direction: column;
+  }
+
+  .developer-card .action-link,
+  .overlay-card .action-link {
+    width: 100%;
+  }
+}
